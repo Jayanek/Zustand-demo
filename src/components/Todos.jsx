@@ -6,7 +6,7 @@ const Todos = () => {
   return (
     <ul className="list-group">
       {todoItems.map((todo) => (
-        <Todo todo={todo} />
+        <Todo key={todo.id} todo={todo} />
       ))}
     </ul>
   );
